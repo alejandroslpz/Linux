@@ -3,8 +3,8 @@
 3.- p // Veo cuantas particiones hay en mi usb
 4.- d // Comando para eliminar, y despues pones el numero de particion
 5.- 1,2,3 (Dependiendo de la cantidad particiones)
-6.- n
-7.- p
+6.- n // crear nueva particion
+7.- p // crear una particion primaria
 8.- pones todos los numeros que esten predeterminados
 9.- p //Para checar si tu particion se hizo bien
 10.- t // Para cambiar tipo de particion
