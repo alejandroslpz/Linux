@@ -1,0 +1,21 @@
+1.- Fdisk -l // Ver la direccion de mi usb
+2.- Fdisk /dev/sdb1 // Me posiciono en mi usb con las opciones para modificar
+3.- p // Veo cuantas particiones hay en mi usb
+4.- d // Comando para eliminar, y despues pones el numero de particion
+5.- 1,2,3 (Dependiendo de la cantidad particiones)
+6.- n
+7.- p
+8.- pones todos los numeros que esten predeterminados
+9.- p //Para checar si tu particion se hizo bien
+10.- t // Para cambiar tipo de particion
+11.- l // Para ver toda la lista de tipos de particion
+12.- Seleccionas el tipo de particion y lo pones
+13.- a // Para que reconozca la usb a la hora de arrancar
+14.- w // Para guardar los cambios
+15.- mkfs -t vfat /dev/sdb1 // Darle el formato vfat a la particion
+16.- df -HT
+17.- umount/dev/sdb1// Desmontar la usb
+18.- mkfs.vfat -F 32 -n usboot(el nombre) /dev/sdb1 //formatear usb
+19.- Me posiciono en mi carpeta contenedora del iso
+20.- dd bs=4M if=fedora.iso of=/dev/sdb //Montar imagen iso en usb
+
